@@ -1,0 +1,45 @@
+{
+  "name": "cordova-plugin-gamepad",
+  "version": "1.1.1-dev",
+  "description": "Cordova Gamepad Plugin",
+  "cordova": {
+    "id": "cordova-plugin-device",
+    "platforms": [
+      "firefoxos",
+      "tizen",
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "blackberry10",
+      "wp7",
+      "wp8",
+      "windows8",
+      "windows",
+      "browser"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/32teeth/cordova-plugin-gamepad"
+  },
+  "keywords": [
+    "cordova",
+    "gamepad",
+    "ecosystem:cordova",
+    "cordova-firefoxos",
+    "cordova-tizen",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-browser"
+  ],
+  "author": "Eugene Yevhen Andruszczenko",
+  "license": "Apache 2.0"
+}
