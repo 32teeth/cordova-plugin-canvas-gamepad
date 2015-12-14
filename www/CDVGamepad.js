@@ -1,7 +1,7 @@
 /* constructor */
 /*
 ** @author Eugene Andruszczenko
-** @version 0.1
+** @version 0.0.4
 ** @date December 11th, 2015
 ** @description 
 ** CDVGamepad.js
