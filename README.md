@@ -30,7 +30,7 @@ cordova create [app-directory] [reverse domain-style identifier] [application di
 add CDVGamepad plugin
 
 ```
-cordova plugin add npm i cordova-plugin-canvas-gamepad
+cordova plugin add cordova-plugin-canvas-gamepad
 ```
 
 iOS9 long press fix (optional)

@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-canvas-gamepad",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cordova Canvas Gamepad Plugin",
   "cordova": {
     "id": "cordova-plugin-canvas-gamepad",
