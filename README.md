@@ -25,7 +25,7 @@ create an app
 cordova create [app-directory] [reverse domain-style identifier] [application display name] && cd [app-directory]
 ```
 
-add CDVGamepad plugin https://github.com/32teeth/cordova-plugin-gamepad.git
+cordova plugin add CDVGamepad plugin https://github.com/32teeth/cordova-plugin-gamepad.git
 
 ```
 cordova plugin add https://github.com/32teeth/cordova-plugin-gamepad.git
