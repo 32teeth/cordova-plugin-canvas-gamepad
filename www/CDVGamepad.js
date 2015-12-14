@@ -1,7 +1,6 @@
-/* constructor */
 /*
 ** @author Eugene Andruszczenko
-** @version 0.0.4
+** @version 0.0.5
 ** @date December 11th, 2015
 ** @description 
 ** CDVGamepad.js
@@ -166,6 +165,10 @@ var CDVGamepad = (function(){
 	var select = false;		
 	var select_button = {x:width/2,y:-15,w:50,h:15,color:colors.black,name:"select"};	
 
+	/*																																
+	** @param hidden {boolean}																					
+	*/																																
+	var joystick = true;		
 
  	/*
 	** @method setup
@@ -190,6 +193,7 @@ var CDVGamepad = (function(){
 					case "start":
 					case "select":
 					case "hidden":
+					case "joystick":
 						switch(typeof config[prop])
 						{
 							case "string":
@@ -247,7 +251,7 @@ var CDVGamepad = (function(){
 		ctx.textBaseline = "middle";
 		ctx.font = bit.small;
 		ctx.fillText("loading", width/2, height/2);	
-		controller.stick.draw();
+		if(joystick){controller.stick.draw();}
 		controller.buttons.draw();
 		setTimeout(function(){ready = true;},250);		
 	};	
@@ -263,7 +267,7 @@ var CDVGamepad = (function(){
 		{
 			if(debug){helper.debug();};
 			if(trace){helper.trace();};
-			controller.stick.draw();
+			if(joystick){controller.stick.draw();}
 			controller.buttons.draw();
 		}
 	};
@@ -326,7 +330,7 @@ var CDVGamepad = (function(){
 			}
 
 			controller.buttons.init();
-			controller.stick.init();
+			if(joystick){controller.stick.init();}
 		},
 		buttons:{
 			init:function()
@@ -839,10 +843,12 @@ var CDVGamepad = (function(){
   ** @method loop {method}
   ** @description this is the 
   */    
+ 
   (function loop(){
     toggle = toggle ? false : true;
     if(toggle)
     {
+    	console.log(this)
       requestAnimationFrame(loop);
       return;
     }

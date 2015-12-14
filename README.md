@@ -79,15 +79,16 @@ onDeviceReady: function() {
 
 | property | type | value(s) | description | example |
 |-:|:-|:-|:-|:-|
-|debug|boolean|true/false|show or hide event debug info<br>*default is false*|```debug:false```|
-|trace|boolean|true/false|show or hide gamepad trace info<br>*default is false*|```trace:false```|
+|debug|boolean|true\|false|show or hide event debug info<br>*default is false*|```debug:false```|
+|trace|boolean|true\|false|show or hide gamepad trace info<br>*default is false*|```trace:false```|
 |canvas|string|id of target canvas|*if left out, creates a new canvas object*|```canvas:"game"```|
 |buttons|array|[]|collection of button objects|```[{name:"x",color:"rgba(255,255,0,0.5)"}]```|
 |button|object|{name:string,color:hex\|rgb\|rgba}|properties for custom buttons|```[{name:"x",color:"rgba(255,255,0,0.5)"},{name:"y",color:"rgba(255,0,255,0.5)"}]```|
 |layout|string|TOP_LEFT \| TOP_RIGHT \| BOTTOM_LEFT \| BOTTOM_RIGHT|cardinal position of buttons<br>*default is **BOTTOM_RIGHT***|```layout:"BOTTOM_RIGHT"```|
-|start|boolean|true/false|display start button<br>*default is true*|```start:false```|
-|select|boolean|true/false|display select button<br>*default is false*||```select:false```|
-|hidden|boolean|true/false|show or hide the gamepad<br>*default is false*|<br>this can be used to *hide* the gamepad if you are doing something else on screen|```hidden:false```|
+|start|boolean|true\|false|display start button<br>*default is true*|```start:false```|
+|select|boolean|true\|false|display select button<br>*default is false*||```select:false```|
+|joystick|boolean|true\|false|display joystick/dpad<br>*default is false*|```debug:false```|
+|hidden|boolean|true\|false|show or hide the gamepad<br>*default is false*|<br>this can be used to *hide* the gamepad if you are doing something else on screen|```hidden:false```|
 
 ###Config examples
 ######*default options*
@@ -184,6 +185,30 @@ CDVGamepad.setup({
 CDVGamepad.setup({
 	hidden:true
 });
+```
+
+######*real world example*
+
+![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-9.png)
+
+```
+onDeviceReady: function() {
+		/*
+		** @description start the game
+		*/
+    game.init();
+		/*
+		** @description setup gamepad, no stick, no start, one button
+		*/    
+    CDVGamepad.setup({
+    	canvas:"controller",
+    	joystick:false,
+    	start:false, 
+    	buttons:[
+    		{name:"jump", color:"rgba(0,0,0,0.25)"}
+    	]
+    });    
+}
 ```
 
 ###CDVGamepad observable method
