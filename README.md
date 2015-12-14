@@ -3,6 +3,8 @@
 
 So you want to add a gamepad to a html5/canvas based app in [cordova](http://cordova.apache.org/)
 
+***npm i cordova-plugin-canvas-gamepad***
+
 ##Cordova
 ###The Basics
 ---
@@ -25,10 +27,10 @@ create an app
 cordova create [app-directory] [reverse domain-style identifier] [application display name] && cd [app-directory]
 ```
 
-cordova plugin add https://github.com/32teeth/cordova-plugin-gamepad.git
+add CDVGamepad plugin
 
 ```
-cordova plugin add https://github.com/32teeth/cordova-plugin-gamepad.git
+cordova plugin add npm i cordova-plugin-canvas-gamepad
 ```
 
 iOS9 long press fix (optional)
