@@ -40,6 +40,6 @@
     "cordova-windows",
     "cordova-browser"
   ],
-  "author": "Eugene Yevhen Andruszczenko",
+  "author": "eugene andruszczenko <eugene.andruszczenko@gmail.com> (http://32teeth.org)",
   "license": "Apache 2.0"
 }
