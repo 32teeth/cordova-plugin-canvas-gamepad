@@ -25,7 +25,7 @@ create an app
 cordova create [app-directory] [reverse domain-style identifier] [application display name] && cd [app-directory]
 ```
 
-add CDVGamepad plugin
+add CDVGamepad plugin https://github.com/32teeth/cordova-plugin-gamepad.git
 
 ```
 cordova plugin add https://github.com/32teeth/cordova-plugin-gamepad.git
@@ -90,11 +90,15 @@ onDeviceReady: function() {
 ###Config examples
 ######*default options*
 
+![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-1.png)
+
 ```
 CDVGamepad.setup();
 ```
 
 ######*one button, custom name, no start button*
+
+![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-2.png)
 
 ```
 CDVGamepad.setup({
@@ -106,6 +110,8 @@ CDVGamepad.setup({
 ```
 
 ######*two buttons, custom names, custom colors, with select button*
+
+![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-3.png)
 
 ```
 CDVGamepad.setup({
@@ -119,6 +125,8 @@ CDVGamepad.setup({
 
 ######*target canvas*
 
+![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-4.png)
+
 ```
 CDVGamepad.setup({
 	canvas:"game"
@@ -126,6 +134,8 @@ CDVGamepad.setup({
 ```
 
 ######*change layout canvas*
+
+![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-5.png)
 
 ```
 CDVGamepad.setup({
@@ -135,6 +145,9 @@ CDVGamepad.setup({
 
 ######*show trace & debug info*
 
+
+![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-6.png)
+
 ```
 CDVGamepad.setup({
 	trace:true,
@@ -143,6 +156,9 @@ CDVGamepad.setup({
 ```
 
 ######*all out everything*
+
+
+![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-7.png)
 
 ```
 CDVGamepad.setup({
@@ -159,6 +175,8 @@ CDVGamepad.setup({
 ```
 
 ######*hidden gamepad*
+
+![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-8.png)
 
 ```
 CDVGamepad.setup({
