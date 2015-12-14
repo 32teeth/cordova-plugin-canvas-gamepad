@@ -76,16 +76,16 @@ onDeviceReady: function() {
 *CDVGamepad is fully customizable, from button names, colors, layout and more.*
 
 | property | type | value(s) | description | example |
-|-|-|-|-|-|
-|debug|boolean|true/false|show or hide event debug info, default is false|```debug:false```|
-|trace|boolean|true/false|show or hide gamepad trace info, default is false|```trace:false```|
-|canvas|string|id of target canvas|if left out, creates a new canvas object|```canvas:"game"```|
+|-:|:-|:-|:-|:-|
+|debug|boolean|true/false|show or hide event debug info<br>*default is false*|```debug:false```|
+|trace|boolean|true/false|show or hide gamepad trace info<br>*default is false*|```trace:false```|
+|canvas|string|id of target canvas|*if left out, creates a new canvas object*|```canvas:"game"```|
 |buttons|array|[]|collection of button objects|```[{name:"x",color:"rgba(255,255,0,0.5)"}]```|
 |button|object|{name:string,color:hex\|rgb\|rgba}|properties for custom buttons|```[{name:"x",color:"rgba(255,255,0,0.5)"},{name:"y",color:"rgba(255,0,255,0.5)"}]```|
-|layout|string|TOP_LEFT \| TOP_RIGHT \| BOTTOM_LEFT \| BOTTOM_RIGHT|cardinal position of buttons default is BOTTOM_RIGHT|```layout:"BOTTOM_RIGHT"```|
-|start|boolean|true/false|display start button, default is true|```start:false```|
-|select|boolean|true/false|display select button, default is false|```select:false```|
-|hidden|boolean|true/false|show or hide the gamepad, default is false, this can be used to hide the gamepad if you are doing something else on screen|```hidden:false```|
+|layout|string|TOP_LEFT \| TOP_RIGHT \| BOTTOM_LEFT \| BOTTOM_RIGHT|cardinal position of buttons<br>*default is **BOTTOM_RIGHT***|```layout:"BOTTOM_RIGHT"```|
+|start|boolean|true/false|display start button<br>*default is true*|```start:false```|
+|select|boolean|true/false|display select button<br>*default is false*||```select:false```|
+|hidden|boolean|true/false|show or hide the gamepad<br>*default is false*|<br>this can be used to *hide* the gamepad if you are doing something else on screen|```hidden:false```|
 
 ###Config examples
 ######*default options*
