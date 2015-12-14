@@ -827,6 +827,7 @@ var CDVGamepad = (function(){
     + "\n\t\t touch-action-delay: none;"
     + "\n\t\ttouch-action: none;"
     + "\n\t\t-ms-touch-action: none;"
+    + "\n\t\tposition:fixed;"
     + "\n}"
     + "\n";
 		document.head.appendChild(style);
