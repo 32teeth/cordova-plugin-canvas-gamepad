@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-gamepad" version="0.0.1">
+  <name>CDVGamepad</name>
+  <description>CDVGamepad is a gamepad HUD for canvas/HTML5 based games</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,gamepad,game,canvas</keywords>
+  <js-module src="www/CDVGamepad.js" name="CDVGamepad">
+    <clobbers target="CDVGamepad" />
+  </js-module>
+</plugin>
