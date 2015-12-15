@@ -1,6 +1,6 @@
 /*
 ** @author Eugene Andruszczenko
-** @version 0.0.5
+** @version 0.0.8
 ** @date December 11th, 2015
 ** @description 
 ** CDVGamepad.js
@@ -833,10 +833,10 @@ var CDVGamepad = (function(){
 		document.head.appendChild(style);
 
 		bit = {
-			small:"14px 'bit'",
-			medium:"24px 'bit'",
-			large:"48px 'bit'",
-			huge:"96px 'bit'"
+			small:"12px 'bit'",
+			medium:"16px 'bit'",
+			large:"24px 'bit'",
+			huge:"48px 'bit'"
 		}	
 	};	
 
