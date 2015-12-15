@@ -220,7 +220,7 @@ CDVGamepad has an observable method that returns the current state map of the ga
 ```
 CDVGamepad.setup()
 /*
-** the below example simply logs out the observe method return
+** @description the below example simply logs out the observe method return
 */
 setInterval(
 	function()
@@ -230,4 +230,18 @@ setInterval(
 	}
 	,1000
 );
+```
+
+
+```
+/*
+** @description additionally, you can throw it into your main loop in canvas
+*/
+function draw()
+{
+	if(CDVGamepad)
+	{
+		gamepad(CDVGamepad.observe())
+	}
+}
 ```
