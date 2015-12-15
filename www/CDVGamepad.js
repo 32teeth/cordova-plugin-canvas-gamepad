@@ -1,6 +1,6 @@
 /*
 ** @author Eugene Andruszczenko
-** @version 0.0.8
+** @version 0.0.9
 ** @date December 11th, 2015
 ** @description 
 ** CDVGamepad.js
@@ -433,7 +433,7 @@ var CDVGamepad = (function(){
 						ctx.fillStyle = "rgba(0,0,0,0.5)";
 						ctx.textAlign = "center";
 						ctx.textBaseline = "middle";
-						ctx.font = bit.small;													
+						ctx.font = bit.button;													
 						ctx.fillText(button.name, x+w/2, y+(h*2));							
 					}				
 				}
@@ -753,7 +753,7 @@ var CDVGamepad = (function(){
 			dy += 5;
 			for(var prop in touches)
 			{
-				dy += 15;
+				dy += 10;
 				var text = prop + " : " + JSON.stringify(touches[prop]).slice(1,-1);
 				ctx.fillText(text, 10, dy);	
 			}								
@@ -770,7 +770,7 @@ var CDVGamepad = (function(){
 			dy += 5;
 			for(var prop in map)
 			{
-				dy += 15;
+				dy += 10;
 				text = prop + " : " + map[prop];
 				
 				ctx.fillText(text, width-10, dy);					
@@ -833,6 +833,7 @@ var CDVGamepad = (function(){
 		document.head.appendChild(style);
 
 		bit = {
+			button:"18px 'bit'",
 			small:"12px 'bit'",
 			medium:"16px 'bit'",
 			large:"24px 'bit'",
