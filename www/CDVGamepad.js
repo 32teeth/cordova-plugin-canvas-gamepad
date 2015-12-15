@@ -1,6 +1,6 @@
 /*
 ** @author Eugene Andruszczenko
-** @version 0.0.9
+** @version 0.1.0
 ** @date December 11th, 2015
 ** @description 
 ** CDVGamepad.js
@@ -408,7 +408,7 @@ var CDVGamepad = (function(){
 						ctx.fillStyle = "rgba(255,255,255,1)";
 						ctx.textAlign = "center";
 						ctx.textBaseline = "middle";
-						ctx.font = bit.small;													
+						ctx.font = bit.button;													
 						ctx.fillText(button.name, x, y);							
 					}
 					else
