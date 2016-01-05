@@ -78,7 +78,7 @@ onDeviceReady: function() {
 *CDVGamepad is fully customizable, from button names, colors, layout and more.*
 
 | property | type | value(s) | description | example |
-|-:|:-|:-|:-|:-|
+|---:|:---|:---|:---|:---|
 |debug|boolean|true\|false|show or hide event debug info<br>*default is false*|```debug:false```|
 |trace|boolean|true\|false|show or hide gamepad trace info<br>*default is false*|```trace:false```|
 |canvas|string|id of target canvas|*if left out, creates a new canvas object*|```canvas:"game"```|
