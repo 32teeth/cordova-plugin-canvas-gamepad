@@ -1,6 +1,7 @@
 /*
 ** @author Eugene Andruszczenko
-** @version 0.0.9
+<<<<<<< HEAD
+** @version 0.1.2
 ** @date July 27th, 2016
 ** @description 
 ** CDVGamepad.js
@@ -425,7 +426,7 @@ var CDVGamepad = (function(){
 						ctx.fillStyle = "rgba(255,255,255,1)";
 						ctx.textAlign = "center";
 						ctx.textBaseline = "middle";
-						ctx.font = bit.small;													
+						ctx.font = bit.button;													
 						ctx.fillText(button.name, x, y);							
 					}
 					else
@@ -450,7 +451,7 @@ var CDVGamepad = (function(){
 						ctx.fillStyle = "rgba(0,0,0,0.5)";
 						ctx.textAlign = "center";
 						ctx.textBaseline = "middle";
-						ctx.font = bit.small;													
+						ctx.font = bit.button;													
 						ctx.fillText(button.name, x+w/2, y+(h*2));							
 					}				
 				}
@@ -770,7 +771,7 @@ var CDVGamepad = (function(){
 			dy += 5;
 			for(var prop in touches)
 			{
-				dy += 15;
+				dy += 10;
 				var text = prop + " : " + JSON.stringify(touches[prop]).slice(1,-1);
 				ctx.fillText(text, 10, dy);	
 			}								
@@ -787,7 +788,7 @@ var CDVGamepad = (function(){
 			dy += 5;
 			for(var prop in map)
 			{
-				dy += 15;
+				dy += 10;
 				text = prop + " : " + map[prop];
 				
 				ctx.fillText(text, width-10, dy);					
@@ -850,10 +851,11 @@ var CDVGamepad = (function(){
 		document.head.appendChild(style);
 
 		bit = {
-			small:"14px 'bit'",
-			medium:"24px 'bit'",
-			large:"48px 'bit'",
-			huge:"96px 'bit'"
+			button:"18px 'bit'",
+			small:"12px 'bit'",
+			medium:"16px 'bit'",
+			large:"24px 'bit'",
+			huge:"48px 'bit'"
 		}	
 	};	
 
