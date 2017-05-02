@@ -1,5 +1,9 @@
 # CDVGamepad
 ----
+[![npm](https://img.shields.io/npm/dw/cordova-plugin-canvas-gamepad.svg?style=flat-square)]()
+[![npm](https://img.shields.io/npm/dm/cordova-plugin-canvas-gamepad.svg?style=flat-square)]()
+[![npm](https://img.shields.io/npm/dy/cordova-plugin-canvas-gamepad.svg?style=flat-square)]()
+[![npm](https://img.shields.io/npm/dt/cordova-plugin-canvas-gamepad.svg?style=flat-square)]()
 
 So you want to add a gamepad to a html5/canvas based app in [cordova](http://cordova.apache.org/)
 
