@@ -1,12 +1,12 @@
-#CDVGamepad
+# CDVGamepad
 ----
 
 So you want to add a gamepad to a html5/canvas based app in [cordova](http://cordova.apache.org/)
 
 ***npm i cordova-plugin-canvas-gamepad***
 
-##Cordova
-###The Basics
+## Cordova
+### The Basics
 ---
 
 install cordova
@@ -61,7 +61,7 @@ prepare platform add blackberry10
 prepare platform add firefoxos
 ```
 
-###CDVGamepad setup and configurations
+### CDVGamepad setup and configurations
 ---
 in you cordova index.js add *CDVGamepad.setup()*
 
@@ -73,7 +73,7 @@ onDeviceReady: function() {
 	CDVGamepad.setup();
 }
 ```
-##Configuration options
+## Configuration options
 
 *CDVGamepad is fully customizable, from button names, colors, layout and more.*
 
@@ -90,8 +90,8 @@ onDeviceReady: function() {
 |joystick|boolean|true\|false|display joystick/dpad<br>*default is false*|```debug:false```|
 |hidden|boolean|true\|false|show or hide the gamepad<br>*default is false*|<br>this can be used to *hide* the gamepad if you are doing something else on screen|```hidden:false```|
 
-###Config examples
-######*default options*
+### Config examples
+###### *default options*
 
 ![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-1.png)
 
@@ -99,7 +99,7 @@ onDeviceReady: function() {
 CDVGamepad.setup();
 ```
 
-######*one button, custom name, no start button*
+###### *one button, custom name, no start button*
 
 ![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-2.png)
 
@@ -112,7 +112,7 @@ CDVGamepad.setup({
 });
 ```
 
-######*two buttons, custom names, custom colors, with select button*
+###### *two buttons, custom names, custom colors, with select button*
 
 ![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-3.png)
 
@@ -126,7 +126,7 @@ CDVGamepad.setup({
 });
 ```
 
-######*target canvas*
+###### *target canvas*
 
 ![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-4.png)
 
@@ -136,7 +136,7 @@ CDVGamepad.setup({
 });
 ```
 
-######*change layout canvas*
+###### *change layout canvas*
 
 ![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-5.png)
 
@@ -146,7 +146,7 @@ CDVGamepad.setup({
 });
 ```
 
-######*show trace & debug info*
+###### *show trace & debug info*
 
 
 ![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-6.png)
@@ -158,7 +158,7 @@ CDVGamepad.setup({
 });
 ```
 
-######*all out everything*
+###### *all out everything*
 
 
 ![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-7.png)
@@ -177,7 +177,7 @@ CDVGamepad.setup({
 });
 ```
 
-######*hidden gamepad*
+###### *hidden gamepad*
 
 ![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-8.png)
 
@@ -187,7 +187,7 @@ CDVGamepad.setup({
 });
 ```
 
-######*real world example*
+###### *real world example*
 
 ![default options](https://raw.githubusercontent.com/32teeth/cordova-plugin-gamepad/master/images/CDVGamepad-9.png)
 
@@ -211,7 +211,7 @@ onDeviceReady: function() {
 }
 ```
 
-###CDVGamepad observable method
+### CDVGamepad observable method
 ---
 CDVGamepad has an observable method that returns the current state map of the gamepad
 
